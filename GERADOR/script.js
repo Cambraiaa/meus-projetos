@@ -15,6 +15,14 @@ slider.oninput = function() {
   sizePassword.innerHTML = this.value;
 }
 
+// Função para mudar o tema
+function changeTheme() {
+  document.body.classList.toggle('light-theme');
+}
+
+// Adicionar um event listener para o botão de mudança de tema
+let themeButton = document.querySelector('#theme-button');
+themeButton.addEventListener('click', changeTheme);
 
 function generatePassword(){
 
